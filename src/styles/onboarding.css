@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sen;
+}
+
+.onboarding-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.onboarding-container>.content {
+    width: 100%;
+    height: 100vh;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.onboarding-container>.content>.steps {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: all 400ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.onboarding-container>.content>.steps>.step {
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 400ms ease;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.step {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.4s ease;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    pointer-events: none;
+}
+
+.step.active {
+    display: flex;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.step.exit-left {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.step.exit-right {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.onboarding-container>.content>.steps>.step:nth-child(1) {
+    display: flex;
+}
+
+.onboarding-container>.content>.steps>.step>.image {
+    width: 240px;
+    height: 290px;
+    background-color: #98A8B8;
+    border-radius: 12px;
+}
+
+.onboarding-container>.content>.steps>.step>h3 {
+    font-weight: 800;
+    font-size: 24px;
+    margin-top: 40px;
+    color: #32343E;
+}
+
+.onboarding-container>.content>.steps>.step>p {
+    width: 324px;
+    height: 48px;
+    font-family: Sen;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #646982;
+    margin-top: 10px;
+}
+
+.onboarding-container>.content>.dots {
+    width: 100%;
+    height: 15px;
+    background-color: #fff;
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.onboarding-container>.content>.dots>.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FFE1CE;
+}
+
+.onboarding-container>.content>.dots>.active {
+    background-color: #FF7622;
+}
+
+.onboarding-container>.content>.buttons {
+    background-color: #fff;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.onboarding-container>.content>.buttons>.next-btn {
+    width: 100%;
+    background-color: #FF7622;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.onboarding-container>.content>.buttons>.skip-btn {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: #646982;
+}

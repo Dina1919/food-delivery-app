@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.splash-screen {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+
+}
+
+.gray-circle {
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  opacity: 0;
+  animation: grayIn 2.5s ease forwards;
+}
+
+.orange-circle {
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  opacity: 0;
+  animation: orangeIn 2.5s ease forwards;
+}
+
+@keyframes grayIn {
+  to {
+    top: -5px;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes orangeIn {
+  to {
+    bottom: -5px;
+    right: -5px;
+    opacity: 1;
+  }
+}
