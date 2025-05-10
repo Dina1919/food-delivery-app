@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sen, serif;
+}
+
+.login-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #121223;
+}
+
+.login-container > .content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-container > .content > .top-left-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.login-container > .content > .top-right-svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.login-container > .content > .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 18%;
+    color: #fff;
+}
+
+.login-container > .content > .title > h2 {
+    width: 99px;
+    height: 36px;
+    top: 118px;
+    left: 138px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+}
+
+.login-container > .content > .title > p {
+    opacity: 0.85;
+    top: 157px;
+    left: 42px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.login-container > .content > .login-steps {
+    width: 100%;
+    top: 35%;
+    position: absolute;
+    bottom: 0;
+    padding: 30px;
+    border-radius: 24px 24px 0 0;
+    background-color: #fff;
+}
+
+.login-container > .content > .login-steps > .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+}
+
+.login-container > .content > .login-steps > .login-form > .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.login-container > .content > .login-steps > .login-form > .form-group > label {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #32343E;
+}
+
+.login-container > .content > .login-steps > .login-form > .form-group > input {
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #F0F5FA;
+    display: flex;
+    outline: none;
+    color: #A0A5BA;
+}
+
+.password-visibility {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+}
+
+#eyeIcon{
+    display: none;
+}
+
+.password-toggle-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.login-container > .content > .login-steps > .login-form > .form-options {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-container > .content > .login-steps > .login-form > .form-options .remember-me{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    color: #7E8A97;
+}
+
+.login-container > .content > .login-steps > .login-form > .form-options > .forgot-password{
+    text-decoration: none;
+    color: #FF7622;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+}
+
+.login-container > .content > .login-steps > .login-form .login-btn{
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #FF7622;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.login-container > .content > .login-steps > .login-form .signup{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.login-container > .content > .login-steps > .login-form .signup > p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    color: #646982;
+}
+
+.login-container > .content > .login-steps > .login-form > .signup > a{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FF7622;
+    text-decoration: none;
+}
+
