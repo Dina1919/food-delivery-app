@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="verification-container background-frame">
+      <div class="content">
+        <div class="top-left-svg">
+          <svg
+            width="141"
+            height="130"
+            viewBox="0 0 141 130"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="5.5"
+              cy="-5.5"
+              r="88.5"
+              stroke="#1E1E2E"
+              stroke-width="94"
+              stroke-dasharray="4 4"
+            />
+          </svg>
+        </div>
+        <div class="top-right-svg">
+          <svg
+            width="94"
+            height="357"
+            viewBox="0 0 94 357"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.2"
+              d="M145 -89L61.2753 -60.2196C54.2279 -57.7971 50.0276 -50.5682 51.4129 -43.246L53.5959 -31.7072C54.9774 -24.4053 50.8041 -17.1927 43.7852 -14.7514L12.4547 -3.85382C1.34971 0.00879479 -1.19608 14.5652 7.93878 21.9676L95.023 92.5359C99.8317 96.4326 101.753 102.883 99.861 108.776L70.4914 200.241C68.9377 205.08 69.9396 210.376 73.1532 214.313L188 355"
+              stroke="#FF7622"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-dasharray="8 8"
+            />
+          </svg>
+        </div>
+        <a href="forgot-password.html" class="back-btn"></a>
+        <header class="title">
+          <h2>Verification</h2>
+          <p>Please sign in to your existing account</p>
+        </header>
+        <div class="verification-steps white-bg">
+          <form class="verification-form" action="">
+            <header>
+              <label for="code-input-1" class="code-label">Code</label>
+              <div class="resend">
+                <a href="" style="text-decoration: underline; color: #32343e"
+                  >Resend</a
+                >
+                <span>in 30s</span>
+              </div>
+            </header>
+            <div class="form-group">
+              <div class="code-inputs">
+                <input
+                  id="code-input-1"
+                  type="text"
+                  maxlength="1"
+                  inputmode="numeric"
+                />
+                <input type="text" maxlength="1" inputmode="numeric" />
+                <input type="text" maxlength="1" inputmode="numeric" />
+                <input type="text" maxlength="1" inputmode="numeric" />
+              </div>
+              <button class="btn verify-btn">Verify</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="../src/scripts/verification.ts"></script>
+  </body>
+</html>

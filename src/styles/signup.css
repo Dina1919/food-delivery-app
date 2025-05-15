@@ -1,0 +1,55 @@
+.signup-steps {
+  width: 100%;
+  top: 35%;
+  position: absolute;
+  bottom: 0;
+  padding: 30px;
+  border-radius: 24px 24px 0 0;
+  background-color: #fff;
+}
+
+form.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.error-message {
+  color: #ff6060;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+input.error {
+  border: 1px solid red;
+  background-color: #ffe6e6;
+}
+
+.password-visibility {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+}
+
+.password-visibility .password-toggle-btn > svg#eye-icon {
+  display: none;
+}

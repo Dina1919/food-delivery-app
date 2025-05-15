@@ -1,0 +1,9 @@
+.input {
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f0f5fa;
+  display: flex;
+  outline: none;
+  color: #32343e;
+}

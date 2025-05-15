@@ -1,0 +1,17 @@
+@import "reset.css";
+
+.btn {
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ff7622;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+}

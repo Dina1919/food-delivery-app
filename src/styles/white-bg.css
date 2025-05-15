@@ -1,0 +1,9 @@
+.white-bg {
+  width: 100%;
+  top: 35%;
+  position: absolute;
+  bottom: 0;
+  padding: 30px;
+  border-radius: 24px 24px 0 0;
+  background-color: #fff;
+}
