@@ -4,10 +4,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector(".login-form") as HTMLFormElement;
   const emailInput = document.getElementById("email") as HTMLInputElement;
   const passwordInput = document.getElementById("password") as HTMLInputElement;
+  const forgetPasswordBtn = document.querySelector(".forget-password");
+  const signUpBtn = document.querySelector(".signup-btn");
   const rememberCheckbox = document.querySelector(
     'input[name="remember"]'
   ) as HTMLInputElement;
 
+  const content = document.querySelector(".content");
   const eyeIcon = document.getElementById("eyeIcon");
   const eyeClosed = document.getElementById("eyeClosed");
   const emailError = document.getElementById("email-error")!;
@@ -112,4 +115,18 @@ document.addEventListener("DOMContentLoaded", () => {
     passwordInput.value = savedPassword;
     rememberCheckbox.checked = true;
   }
+
+  forgetPasswordBtn.addEventListener("click", () => {
+    content?.classList.add("fade-out");
+    setTimeout(() => {
+      window.location.href = "../../pages/forgot-password.html"
+    }, 600);
+  });
+
+  signUpBtn.addEventListener("click", () => {
+    content?.classList.add("fade-out");
+    setTimeout(() => {
+      window.location.href = "../../pages/signup.html"
+    }, 600);
+  });
 });

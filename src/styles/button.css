@@ -14,4 +14,31 @@
   border-radius: 12px;
   padding: 20px;
   cursor: pointer;
+  font-family: sen, serif;
+}
+
+.gray-text-color-btn{
+  background-color: white;
+  color: gray;
+  border: none;
+  font-family: sen, serif;
+}
+
+.orange-text-color-btn{
+  background-color: white;
+  color: #ff7622;
+  border: none;
+  font-family: sen, serif;
+}
+
+.back-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background: url("../images/Back.png") white no-repeat center center;
+  margin-left: 30px;
+  position: absolute;
+  top: 6%;
+  left: 0;
 }

@@ -11,6 +11,15 @@ document.addEventListener("DOMContentLoaded", () => {
   ) as HTMLFormElement;
   const emailError = document.getElementById("email-error")!;
 
+  backBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    content?.classList.add("slide-out");
+
+    setTimeout(() => {
+      window.location.href = "../../pages/login.html";
+    }, 600);
+  });
+
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 

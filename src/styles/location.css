@@ -50,24 +50,11 @@ body {
 }
 
 .location-container > .content > .location-btn {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  background-color: #ff7622;
-  color: #fff;
   border: none;
   border-radius: 12px;
-  padding: 20px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 
 .location-container > .content > .location-btn > span {
