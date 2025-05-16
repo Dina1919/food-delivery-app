@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll<HTMLInputElement>(".code-inputs input");
   const resendLink = document.querySelector<HTMLAnchorElement>(".resend a");
   const resendTimer = document.querySelector<HTMLSpanElement>(".resend span");
-  const backBtn = document.querySelector<HTMLAnchorElement>(".back-btn");
-  const content = document.querySelector(".content");
+  const backBtn = document.querySelector<HTMLAnchorElement>(".back-btn")!;
+  const content = document.querySelector(".content")!;
   const verifyBtn = document.querySelector(".verify-btn") as HTMLButtonElement;
 
   let countdown = 30;
