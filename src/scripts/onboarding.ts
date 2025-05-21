@@ -12,6 +12,11 @@ window.addEventListener("DOMContentLoaded", () => {
   let touchEndX = 0;
   const threshold = 50;
 
+  // اگر آنبوردینگ قبلاً دیده شده، مستقیم به صفحه بعد برو
+  if (localStorage.getItem("onboardingShown") === "true") {
+    window.location.href = "../../pages/location.html";
+  }
+
   function updateStepClasses(
     prevIndex: number,
     nextIndex: number,
@@ -78,6 +83,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   nextBtn.addEventListener("click", () => {
     if (currentStep === steps.length - 1) {
+      localStorage.setItem("onboardingShown", "true");
       window.location.href = "../../pages/location.html";
     } else {
       goToNextStep();
@@ -85,6 +91,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   skipBtn.addEventListener("click", () => {
+    localStorage.setItem("onboardingShown", "true");
     window.location.href = "../../pages/location.html";
   });
 });
